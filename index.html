@@ -1,0 +1,511 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#1b1119">
+  <meta name="description" content="A little corner of the heart, made with care.">
+  <title>Just Us 💗 — For Madam Ji</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="musicPrompt" class="music-prompt" role="button" tabindex="0" aria-label="Tap to start music">
+    ♡ Tap anywhere to play music ♡
+  </div>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <div class="petal-layer" id="petalLayer" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Just Us home"><span class="brand-icon">♡</span><span><strong>just us for my love </strong><small>a little corner of my heart</small></span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav class="nav-links" id="navLinks">
+      <a href="#letter">My Letter</a><a href="#memories">Memory Lane</a><a href="#unsaid">Unsaid Words</a><a href="#story">Our Story</a><a href="#promises">Promises</a>
+    </nav>
+    <button class="sound-button" id="soundBtn" type="button" aria-pressed="false">♫ <span>Sound off</span></button>
+  </header>
+
+  <main>
+    <section class="hero page-width" id="home">
+      
+      <div class="hero-copy reveal">
+        <div class="eyebrow">
+          <span class="eyebrow-dot"></span>
+          A LITTLE APOLOGY, A LOT OF LOVE ❤️
+        </div>
+
+        <h1>
+          Meri Pyari<br>
+          <span>Madam Ji</span>
+          <span class="title-heart">♥</span>
+        </h1>
+
+        <p class="hero-lead">
+          Kuch feelings words mein kehna aasaan nahi hota,
+          isliye tumhare liye dil se ye chhoti si duniya banayi hai.
+        </p>
+
+        <p class="hero-sub">
+          I know mujhse galtiyan hui hain, aur meri kuch baaton ne
+          tumhe hurt bhi kiya hai. Main bas chahta hoon ki tum meri
+          baat ek baar pyaar se padho. No excuses, just a sincere
+          apology and a promise to become better.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button button-primary" href="#letter">
+            Read My Heartfelt Letter <span>↗</span>
+          </a>
+
+          <a class="button button-secondary" href="#memories">
+            Our Beautiful Memories <span>♡</span>
+          </a>
+        </div>
+
+        <div class="quiet-note">
+          <span>♡</span>
+          No pressure, Madam Ji. Bas dil ki kuch sachchi baatein.
+        </div>
+      </div>
+
+
+      
+      <div class="hero-art reveal" aria-label="A heart surrounded by floating memories">
+
+        <div class="halo halo-one"></div>
+        <div class="halo halo-two"></div>
+        <div class="spark spark-one">✦</div>
+        <div class="spark spark-two">✧</div>
+        <div class="spark spark-three">·</div>
+
+        <!-- Floating photo 1 -->
+        <div class="floating-polaroid polaroid-one">
+          <div class="polaroid-photo">
+            <img src="assets/photos/photo2.jpeg"
+                alt="Our favourite memory"
+                onerror="this.style.display='none';this.parentElement.textContent='♡';">
+          </div>
+          <span>Our Favourite Smile</span>
+        </div>
+
+        <!-- Floating photo 2 -->
+        <div class="floating-polaroid polaroid-two">
+          <div class="polaroid-photo">
+            <img src="assets/photos/photo1.jpeg"
+                alt="A beautiful memory"
+                onerror="this.style.display='none';this.parentElement.textContent='🌷';">
+          </div>
+          <span>A Beautiful Day</span>
+        </div>
+
+        <!-- Floating photo 3 -->
+        <div class="floating-polaroid polaroid-three">
+          <div class="polaroid-photo">
+            <img src="assets/photos/photo7.jpeg"
+                alt="A happy memory"
+                onerror="this.style.display='none';this.parentElement.textContent='♡';">
+          </div>
+          <span>Little Happiness</span>
+        </div>
+
+        <!-- Sorry note -->
+        <div class="sorry-note">
+          I’m Really
+          <strong>Sorry ♡</strong>
+        </div>
+
+        <!-- Main heart -->
+        <svg class="hero-heart"
+            viewBox="0 0 200 185"
+            role="img"
+            aria-label="Pink heart">
+
+          <defs>
+            <linearGradient id="heartGradient"
+                            x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#ff8bbb"/>
+              <stop offset="52%" stop-color="#f64c98"/>
+              <stop offset="100%" stop-color="#d93682"/>
+            </linearGradient>
+
+            <filter id="heartShadow"
+                    x="-40%" y="-40%" width="180%" height="190%">
+              <feDropShadow dx="0" dy="15" stdDeviation="9"
+                            flood-color="#bd397d"
+                            flood-opacity=".25"/>
+            </filter>
+          </defs>
+
+          <path
+            filter="url(#heartShadow)"
+            fill="url(#heartGradient)"
+            stroke="#ffffff"
+            stroke-opacity=".65"
+            stroke-width="2"
+            d="M100 169 C85 154 16 108 16 57
+              C16 28 37 12 61 12
+              C79 12 92 22 100 39
+              C108 22 121 12 139 12
+              C163 12 184 28 184 57
+              C184 108 115 154 100 169Z"/>
+
+          <path
+            fill="none"
+            stroke="#fff"
+            stroke-opacity=".6"
+            stroke-width="5"
+            stroke-linecap="round"
+            d="M39 49 C43 34 54 29 65 30"/>
+        </svg>
+
+        <div class="floating-label label-top">
+          you matter <span>✿</span>
+        </div>
+
+        <div class="floating-label label-bottom">
+          <span class="label-heart">♥</span>
+          <span>
+            <strong>A gentle reminder</strong>
+            <small>Your feelings deserve care, too.</small>
+          </span>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section page-width" id="letter">
+      <div class="section-heading reveal"><span class="section-kicker">WORDS FROM MY HEART</span><h2>A letter for you <span>♡</span></h2><p>Open the envelope whenever you feel like reading.</p></div>
+      <div class="letter-layout">
+        <button class="envelope" id="envelope" type="button" aria-expanded="false" aria-controls="letterContent" aria-label="Open the letter">
+          <span class="envelope-paper">♡</span><span class="envelope-back"></span><span class="envelope-flap"></span><span class="envelope-front"></span><span class="envelope-seal">♥</span>
+        </button>
+        <p class="envelope-hint" id="envelopeHint">Tap the envelope to open your letter</p>
+        <article class="letter-paper" id="letterContent" hidden>
+           <div class="letter-topline">
+            <span>FOR MY MADAM JI</span>
+            <span>♡</span>
+          </div>
+          
+          <h3>Meri Pyari Madam Ji 🎀❤️</h3>
+
+          <p>Dear Madam Ji, meri pyari Malkin ❤️👑🫶🏻</p>
+
+          <p>
+            Sabse pehle, main tumse dil se sorry kehna chahta hoon. Mujhe pata hai ki mujhse bahut si galtiyan hui hain. Kabhi-kabhi main bahut zyada overthink karne lagta hoon, possessive aur overprotective ho jaata hoon, aur apni feelings samjhate-samjhate aisi baatein keh deta hoon jo tumhe hurt karti hain. Main apni galtiyon ke liye koi bahana nahi banana chahta. Mujhe sach mein afsos hai ki meri wajah se tumhe takleef hui. 🥺❤️‍🩹
+          </p>
+
+          <p>
+            Jab tumne mujhe milne ke liye bulaya tha aur main nahi aa paaya, toh mujhe tumhari feelings ko aur achhe se samajhna chahiye tha. Main chahta tha ki hum apne career aur relationship ko saath lekar chalein, lekin shayad apni baat samjhane ki koshish mein main tumhari baat dhyaan se sunna bhool gaya. Mujhe samajhna chahiye tha ki tumhari feelings aur tumhari expectations bhi utni hi important hain. 💗
+          </p>
+
+          <p>
+            September se lekar ab tak, agar meri kisi baat, gusse ya behaviour ne tumhara dil dukhaya hai, toh uske liye main dil se maafi maangta hoon. Main beete hue waqt ko badal nahi sakta, lekin apni galtiyon ko samajhkar khud ko behtar banane ki koshish zaroor kar sakta hoon. Main seekhna chahta hoon ki gusse mein kaise rukna hai, overthinking ko kaise control karna hai aur tumhari baat ko bina kisi behas ke kaise sunna hai. ❤️‍🩹🫂
+          </p>
+
+          <p>
+            Aur baby, aaj jo mujhse galti hui, uske liye bhi main tumse dil se maafi maangta hoon. Mere muh se tumhare liye gaali nikal gayi, aur mujhe khud par bahut regret ho raha hai. Yrr, sach kahun toh main tumhe kabhi gaali dena toh door, aisa sochna bhi nahi chahta. Lekin jo words mere muh se nikle, unse tumhe kitna bura laga hoga, main samajh sakta hoon. Main neend mein tha ya meri condition kuch bhi thi, lekin isse meri galti chhoti nahi ho jaati. Tumhe hurt hua, aur uski responsibility meri hai. 🥺
+          </p>
+
+          <p>
+            Baby, please ho sake toh mujhe maaf kar dena. Main dil se keh raha hoon ki aage se apne words aur gusse par control rakhne ki poori koshish karunga. Main sirf promise nahi karna chahta, balki apne behaviour se tumhe ye dikhana chahta hoon ki main sach mein khud ko better bana raha hoon. ❤️
+          </p>
+
+          <p>
+            Madam Ji, tum mere liye bahut special ho. Tumhari smile, tumhari khushi aur tumhara sukoon mere liye bahut maayne rakhte hain. 👑🎀 Tumse bahut pyaar karta hoon, lekin main ye bhi samajhta hoon ki pyaar ka matlab sirf care karna nahi, balki trust, understanding, respect aur ek-doosre ko space dena bhi hota hai.
+          </p>
+
+          <p>
+            Yrr, tujhe pata hai na main tujhse kitna pyaar karta hoon. Kabhi-kabhi gusse mein bol deta hoon "chhod de, chhod de", lekin sach toh ye hai ki main kabhi nahi chahta ki humara rishta kharab ho. Tu meri life ka bahut special hissa hai, baby. Main tujhe khona nahi chahta. ❤️
+          </p>
+
+          <p>
+            Pata nahi mere saath hi aisa kyun hota hai. Main kuch achha karne ki koshish karta hoon aur jaane-anjaane mein sab kharab kar deta hoon. Main perfect nahi hoon, mujhse galtiyan hoti hain, lekin main apni galtiyon ko samajhna aur khud ko badalna chahta hoon. Sirf tere liye nahi, balki humare rishte ko aur achha banane ke liye bhi. 🥹
+          </p>
+
+          <p>
+            Ek baat aur baby, main tujhse ek request karna chahta hoon. Please hum dono roz-roz ke kalesh thode kam karte hain na. Pehle bhi tu mujhse ladti thi, chhoti-chhoti baaton par naraz hoti thi, lekin tab un baaton mein bhi ek alag sa pyaar mehsoos hota tha. Teri narazgi bhi mujhe pyaari lagti thi. Main chahta hoon ki hum phir se ek-doosre ke saath waise hi khush rahein. 💗
+          </p>
+
+          <p>
+            Main teri baatein sunta hoon aur teri narazgi samajhne ki koshish karta hoon, lekin baby, main bhi insaan hoon. Kabhi-kabhi kuch baaton se mujhe bhi takleef hoti hai. Main nahi chahta ki hum gusse mein ek-doosre se aisi baatein keh dein jo baad mein hum dono ko hurt karein.
+          </p>
+
+          <p>
+            Tu naraz ho, mujhse apni har baat keh, mujh par gussa bhi kar, lekin please hum dono ek-doosre ki respect kabhi mat khona. Main bhi ye poori koshish karunga ki apne words ya behaviour se tujhe kabhi hurt na karun. Hum dono ko ek-doosre ko samajhne ki koshish karni chahiye, na ki har baar ek-doosre ko galat saabit karna chahiye. ❤️🫂
+          </p>
+
+          <p>
+            Main sirf sorry bolkar sab kuch theek hone ki umeed nahi rakhna chahta. Main apne actions se behtar insaan banna chahta hoon. Main jaanta hoon ki trust dobara banne mein waqt lag sakta hai, aur main is baat ko samajhta hoon. Tumhari feelings, tumhara sukoon aur tumhara decision mere liye hamesha respect ke layak hain. 🥹🌷
+          </p>
+
+          <p>
+            Please yaar, agar kabhi tumhare dil mein mere liye maafi ki jagah ho, toh mujhe maaf kar dena. 😭❤️ Main tumhe khona nahi chahta, lekin main tum par mujhe maaf karne ya mere saath rehne ka pressure bhi nahi daalna chahta. Agar tumhe waqt aur space chahiye, toh main uski bhi respect karunga.
+          </p>
+
+          <p>
+            Main tumse bas itna kehna chahta hoon ki jo kuch bhi hua, uske liye mujhe dil se afsos hai. Kaash main pehle hi apni galtiyon ko samajh paata aur tumhe hurt karne se khud ko rok paata. Main apni galtiyon ki responsibility leta hoon aur khud mein sachcha badlaav laane ki koshish karunga.
+          </p>
+
+          <p>
+            Agar kabhi tum khud mujhse baat karna chaho, toh main tumhari baat calmly sununga aur tumhari feelings ko samajhne ki poori koshish karunga. Main chahta hoon ki humare beech pyaar ke saath-saath dosti, bharosa aur respect bhi hamesha bana rahe. ❤️🦋
+          </p>
+
+          <p>
+            Apna khayal rakhna, Madam Ji. Hamesha khush rehna aur apni pyari si smile banaye rakhna. 🎀🌸
+          </p>
+
+          <p>
+            Ek baar phir, meri taraf se dil se sorry. Main perfect nahi hoon, lekin apni galtiyon ko pehchaan kar ek behtar insaan aur behtar partner banna chahta hoon.
+          </p>
+
+          <p>
+            I am so sorry, baby. ❤️<br>
+            Miss you so much, Babu. 🥺<br>
+            I love you so much, Garima. ❤️💗💓
+          </p>
+
+          <p>
+            <strong>Tumhara pagal sa insaan ❤️🥹🫶🏻</strong><br>
+            Always wishing you happiness ♡
+          </p>
+          
+        </article>
+      </div>
+    </section>
+
+    
+    <section class="section page-width" id="memories">
+      <div class="section-heading reveal">
+        <span class="section-kicker">OUR BEAUTIFUL LITTLE MEMORIES ❤️</span>
+        <h2>Pal jo dil ke kareeb hain <span>✧</span></h2>
+        <p>
+          Har photo ke peeche ek kahani hai, har memory mein tum ho
+          aur har pal mere liye bahut special hai. 🎀
+        </p>
+      </div>
+      <div class="gallery" id="gallery"></div>
+    </section>
+
+
+    <section class="section page-width" id="unsaid">
+      <div class="section-heading reveal">
+        <span class="section-kicker">THINGS I NEVER SAID OUT LOUD</span>
+        <h2>Kuch baatein jo dil mein reh gayi <span>♡</span></h2>
+        <p>Kuch feelings kabhi words mein nahi aa paayi. Ye chhoti si jagah unhi baaton ke naam.</p>
+      </div>
+      <div class="unsaid-grid">
+        <article class="unsaid-card reveal"><span>01 · A LITTLE TRUTH</span><h3>Tumhari smile</h3><p>Tumhari smile dekhkar mera din achha ho jaata hai. I hope tumhare paas hamesha muskurane ki wajah rahe. 🌷</p></article>
+        <article class="unsaid-card reveal"><span>02 · A REALIZATION</span><h3>I should have listened</h3><p>Kai baar main apni baat samjhane mein itna busy ho gaya ki tumhari baat poori tarah sun hi nahi paaya. I am learning to listen better. ❤️‍🩹</p></article>
+        <article class="unsaid-card reveal"><span>03 · A WISH</span><h3>Your peace matters</h3><p>Main chahta hoon tum khush raho, apne dreams achieve karo aur apni life mein grow karo — bina kisi pressure ke. 🕊️</p></article>
+      </div>
+    </section>
+
+    <section class="section page-width" id="love-notes">
+      <div class="message-card reveal">
+        <span class="section-kicker">A LITTLE NOTE, JUST FOR YOU</span>
+        <h2>Madam Ji, ek chhota sa reminder 🎀</h2>
+        <p id="randomMessage" aria-live="polite">Tumhari smile bahut special hai. I hope aaj tumhare chehre par ek pyari si smile ho. ♡</p>
+        <button class="button button-secondary" id="randomMessageBtn" type="button">Another little message <span>↻</span></button>
+      </div>
+    </section>
+
+    <section class="section page-width" id="music-player">
+      <div class="music-card reveal">
+        <div class="music-art" aria-hidden="true"><span>♫</span><i>♡</i></div>
+        <div class="music-info">
+          <span class="section-kicker">A SONG FOR THIS LITTLE CORNER</span>
+          <h2>Our little soundtrack</h2>
+          <p>Ek gaana, kuch yaadein aur tumhare naam ek chhota sa moment. 🎧</p>
+          <div class="music-controls">
+            <button class="music-control" id="customPlayBtn" type="button" aria-label="Play music">▶</button>
+            <div class="music-track">
+              <div class="music-time"><span id="musicCurrent">0:00</span><span id="musicDuration">0:00</span></div>
+              <input id="musicSeek" type="range" min="0" max="100" value="0" aria-label="Seek music">
+            </div>
+            <button class="music-control" id="customMuteBtn" type="button" aria-label="Mute music">♪</button>
+          </div>
+          <div class="music-caption">Agar music automatically start na ho, play button tap karna. Browser autoplay ko block kar sakta hai.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section page-width" id="story">
+      <div class="section-heading reveal">
+        <span class="section-kicker">OUR JOURNEY, MY REALIZATIONS</span>
+        <h2>Humari kahani aur meri seekh <span>🌷</span></h2>
+        <p>
+          Humari kahani perfect nahi rahi, lekin is rishte ne mujhe
+          pyaar, patience aur respect ki importance sikhayi hai.
+        </p>
+      </div>
+
+      <div class="timeline">
+
+        <article class="timeline-card reveal">
+          <span class="timeline-number">01</span>
+          <div>
+            <small>THE MEMORIES I CHERISH</small>
+            <h3>Tumhare saath bitaye woh pal ❤️</h3>
+            <p>
+              Tumhare saath ki hui baatein, hasi-mazaak, chhoti-chhoti
+              nok-jhok aur woh special moments mere liye bahut precious
+              hain. Main un sabhi khoobsurat yaadon ke liye dil se grateful hoon.
+            </p>
+          </div>
+        </article>
+
+        <article class="timeline-card reveal">
+          <span class="timeline-number">02</span>
+          <div>
+            <small>MY MISTAKES, MY RESPONSIBILITY</small>
+            <h3>Mujhe apni galtiyon ka ehsaas hai 🥺</h3>
+            <p>
+              Overthinking, possessiveness, gussa aur kabhi-kabhi galat
+              words bol dena — main samajhta hoon ki meri in baaton se
+              tumhe takleef hui hai. Aaj jo kuch bhi hua, uske liye bhi
+              main dil se sorry hoon. Main koi bahana nahi banana chahta.
+            </p>
+          </div>
+        </article>
+
+        <article class="timeline-card reveal">
+          <span class="timeline-number">03</span>
+          <div>
+            <small>WHAT I WANT TO CHANGE</small>
+            <h3>Sirf sorry nahi, sachcha badlaav ❤️‍🩹</h3>
+            <p>
+              Main apne gusse aur words par control karna, tumhari baat
+              calmly sunna aur bina behas kiye tumhari feelings samajhna
+              seekhna chahta hoon. Main chahta hoon ki meri sincerity
+              tumhe mere actions mein nazar aaye.
+            </p>
+          </div>
+        </article>
+
+        <article class="timeline-card reveal">
+          <span class="timeline-number">04</span>
+          <div>
+            <small>A HOPE FOR US</small>
+            <h3>Phir se woh pyaari si bonding 💗</h3>
+            <p>
+              Main chahta hoon ki humare beech pyaar ke saath dosti,
+              understanding aur respect bhi bani rahe. Chhoti-chhoti
+              baaton ko samajhkar suljhayein aur ek-doosre ko hurt
+              karne ke bajaye support karein. Agar hum dono chahein,
+              toh hum apne rishte ko aur behtar bana sakte hain.
+            </p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="section page-width" id="promises">
+      <div class="section-heading reveal">
+        <span class="section-kicker">MY WORDS, MY RESPONSIBILITY</span>
+        <h2>Madam Ji, mujhse ye promises ❤️</h2>
+        <p>
+          Bade-bade vaade nahi, bas kuch sachchi koshishein
+          jo main apne behaviour mein lana chahta hoon.
+        </p>
+      </div>
+
+      <div class="promise-grid">
+
+        <article class="promise-card reveal">
+          <span>🫶</span>
+          <h3>Tumhari baat sununga</h3>
+          <p>
+            Bina beech mein roke, bina behas kiye,
+            pehle tumhari feelings samajhne ki koshish karunga.
+          </p>
+        </article>
+
+        <article class="promise-card reveal">
+          <span>🌱</span>
+          <h3>Khud ko better banaunga</h3>
+          <p>
+            Apni overthinking aur possessiveness ko samajhkar
+            unhe control karne par kaam karunga.
+          </p>
+        </article>
+
+        <article class="promise-card reveal">
+          <span>🕊️</span>
+          <h3>Tumhari space ki respect</h3>
+          <p>
+            Tumhe waqt chahiye ho toh dunga.
+            Tumhare decisions aur boundaries ki respect karunga.
+          </p>
+        </article>
+
+        <article class="promise-card reveal">
+          <span>💬</span>
+          <h3>Words mein respect</h3>
+          <p>
+            Gusse mein galat words use nahi karunga.
+            Narazgi ho tab bhi tumhari respect nahi bhoolunga.
+          </p>
+        </article>
+
+        <article class="promise-card reveal">
+          <span>💗</span>
+          <h3>Jhagde nahi, understanding</h3>
+          <p>
+            Har chhoti baat ko bada banane ke bajaye
+            calmly baat karke suljhane ki koshish karunga.
+          </p>
+        </article>
+
+        <article class="promise-card reveal">
+          <span>🌷</span>
+          <h3>Actions se pyaar dikhaunga</h3>
+          <p>
+            Sirf sorry aur promises nahi,
+            balki apne behaviour se apni sincerity dikhaunga.
+          </p>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="closing page-width reveal">
+      <div class="closing-decoration">✧</div>
+      <div class="closing-heart">♡</div>
+
+      <span class="section-kicker">FROM THE BOTTOM OF MY HEART</span>
+
+      <h2>Ek baar maaf kar dena, Madam Ji. 🥺❤️</h2>
+
+      <p>
+        Main nahi chahta ki meri galtiyon ki wajah se humari
+        khoobsurat yaadein aur rishta hurt ho. Main tumse bahut
+        pyaar karta hoon aur sach mein khud ko better banana chahta hoon.
+        Main tum par koi pressure nahi daalunga. Tumhe jitna waqt aur
+        space chahiye, main uski respect karunga. Bas itna chahta hoon
+        ki kabhi tumhe meri sincerity mere actions mein nazar aaye.
+      </p>
+
+      <button class="button button-primary" id="surpriseBtn" type="button">
+        A little message for you <span>♡</span>
+      </button>
+
+      <p class="closing-note">
+        I am so sorry, baby. Miss you so much, Babu. 🥺
+        I love you so much, Garima. ❤️💗💓
+      </p>
+    </section>
+    </main>
+
+
+  <footer>Made with care, honesty & hope <span>♡</span></footer>
+  <dialog class="surprise-dialog" id="surprise"><button class="dialog-close" id="closeSurprise" aria-label="Close">×</button><div class="dialog-flower">🌷</div><h2>Ek last baat, Madam Ji. 🌷</h2><p>I am genuinely sorry for the moments I made difficult. Tumhari feelings aur tumhara sukoon important hain. No pressure, no expectation — bas dil se ek apology aur tumhare liye hamesha achhi wishes. I hope tum hamesha khush raho. ♡</p><button class="button button-secondary" id="dialogOkay">Thank you ♡</button></dialog>
+  <audio id="backgroundMusic" loop preload="metadata">
+    <source
+      src="./assets/audio/Chalo_Jaane_Do_[Full_Song]_-_Bhoothnath(256k).mp3"
+      type="audio/mpeg">
+  </audio>
+  <script src="script.js"></script>
+</body>
+</html>
